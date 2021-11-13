@@ -1,0 +1,12 @@
+<div class="limit">
+
+    <b>Enter Timer Limit:</b>
+    <input type="number" id="eTimerLimit" name="eTimerLimit" [(ngModel)]="timer">
+    
+    <div class="timer">
+        <button type="button" class="btn" (click)="timerChange()"><b>Start</b></button>
+        <button type="button" class="btn" (click)="pauseTimer()"><b>Pause</b></button>
+        <button type="button" class="btn" (click)="resetTimer()"><b>reset</b></button>
+    </div>
+    <p *ngFor="let time of timerService.pausedArray">paused at {{time}}</p>
+</div>

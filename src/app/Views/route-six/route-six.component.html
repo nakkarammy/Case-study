@@ -1,0 +1,11 @@
+<div class="parent row">
+
+    <div class="col-3" *ngFor="let item of [].constructor(100); let i = index">
+
+        <div class="child">
+            <button (click)="showAlert(i+1)" class="btn btn-success">alert</button>
+        </div>
+
+    </div>
+
+</div>
